@@ -59,7 +59,7 @@ sn | string(50) | 必填 | 22位件码
 
 httpStatus | description
 ----------|------
-200 | 数据完成同步
+204 | 数据完成同步
 409 | 数据无法同步(通常是指通知单为非待出库状态 需要追件)
 Other | 重传
 
@@ -72,10 +72,10 @@ Other | 重传
 parameter | type | Optional | description
 ----------|------|---------|------------
 seq | string(50) | 必填 | 接口调用唯一批号 重推直接返回结果
-storeCode | string | 必填 | 入库仓编号
-dn | string | 可选 | 拒收等能追溯得提供通知单号，疑难件可选 
-tn | string | 必填 | 退回包裹号
-sn | string | 必填 | 退回件码
+storeCode | string(50) | 必填 | 入库仓编号
+dn | string(50) | 可选 | 拒收等能追溯得提供通知单号，疑难件可选 
+tn | string(50) | 必填 | 退回包裹号
+sn | string(50) | 必填 | 退回件码
 ##### requestbody
 ```
 {
@@ -97,5 +97,5 @@ sn | string | 必填 | 退回件码
 ##### response
 httpStatus | description
 ----------|------
-200 | 数据完成同步
+204 | 数据完成同步
 Other | 重传
