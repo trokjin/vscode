@@ -103,3 +103,35 @@ httpStatus | description
 ----------|------
 204 | 数据完成同步
 Other | 重传
+
+## 退单
+##### path
+`/scm/refuse`
+##### content-type
+`application/json`
+##### 参数
+parameter | type | Optional | description
+----------|------|---------|------------
+seq | string(50) | 必填 | 接口调用唯一批号 重推直接返回结果
+dn | string(50) | 可选 | 拒收等能追溯得提供通知单号，疑难件可选 
+msg | string(100) | 可选 | 备注
+##### requestbody
+```
+{
+    "seq":"DDDDDD",
+    "dn":"OMS009246908643",
+    "msg":""}
+```
+1.回传批号8ud22e996 通知单号OMS009246908643
+```
+{
+    "seq":"8ud22e996",
+    "dn":"OMS009246908643",
+    "msg:"
+}
+```
+##### response
+httpStatus | description
+----------|------
+204 | OMS以确认发货方不再执行出库操作
+Other | 重传
