@@ -74,8 +74,10 @@ parameter | type | Optional | description
 seq | string(50) | 必填 | 接口调用唯一批号 重推直接返回结果
 storeCode | string(50) | 必填 | 入库仓编号
 dn | string(50) | 可选 | 拒收等能追溯得提供通知单号，疑难件可选 
+cc | string(50) | 可选 | 退回快递类型
 tn | string(50) | 必填 | 退回包裹号
 sn | string(50) | 必填 | 退回件码
+ts | string(50) | 必填 | 退回时间(yyyy-MM-dd HH:mm:ss)
 ##### requestbody
 ```
 {
