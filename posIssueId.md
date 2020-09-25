@@ -12,7 +12,7 @@ issueId | string(50) | 必填 | 工单唯一批号 重推直接返回结果
 issueType | string(50) | 必填 | 工单类型(催件、撤回、疑难)
 dn | string(50) | 必填 | 涉及通知单号
 shopCode | string(50) | 必填 | 接收门店代号 
-question | string(50) |(200) | 必填 | 提问消息
+question | string(200) | 必填 | 提问消息
 drawable | base64String | 可选 | 涉及媒体
 ts | string(20) | 必填 | 发起时间(yyyy-MM-dd HH:mm:ss)
 ##### requestbody
@@ -41,7 +41,7 @@ POS
 parameter | type | Optional | description
 ----------|------|---------|------------
 issueId | string(50) | 必填 | 工单唯一批号 重推直接返回结果
-answer | string(50)(200) | 必填 | 答复消息
+answer | string(200) | 必填 | 答复消息
 ts | string(20) | 必填 | 答复时间(yyyy-MM-dd HH:mm:ss)
 ##### requestbody
 ```
