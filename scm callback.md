@@ -15,10 +15,10 @@ sn | string(50) | 必填 | 22位件码
 {
     "seq":"DDDDDDDDD",
     "dn":"OMS123456789",
-    "pkg":{
+    "pkgs":[{
         "tn":"EXPRESS123",
         "sns":["SERIALIZENUMBER"]
-    }
+    }]
 }
 ```
 
@@ -40,7 +40,7 @@ sn | string(50) | 必填 | 22位件码
 {
     "seq":"s3f53xbbt",
     "dn":"OMS009246907476",
-    "pkg":[
+    "pkgs":[
         {
             "tn":"SF1885708314178",
             "sns":[
