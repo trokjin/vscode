@@ -8,6 +8,7 @@ OMS
 ##### Query parameter
 `method=omsaftersaleorder`
 ##### 参数
+###### 提问
 parameter | type | Optional | description
 ----------|------|---------|------------
 issueId | string(50) | 必填 | 工单唯一批号 重推直接返回结果
@@ -17,7 +18,14 @@ shopCode | string(50) | 必填 | 接收门店代号
 question | string(200) | 必填 | 提问消息
 drawable | base64String | 可选 | 涉及媒体
 ts | string(20) | 必填 | 发起时间(yyyy-MM-dd HH:mm:ss)
+###### 关闭提问
+parameter | type | Optional | description
+----------|------|---------|------------
+issueId | string(50) | 必填 | 工单唯一批号 重推直接返回结果
+action | string | 必填 | 常量`close`
+ts | string(20) | 必填 | 发起时间(yyyy-MM-dd HH:mm:ss)
 ##### requestbody
+###### 提问
 ```
 {
     "issueId":"12131313131",
@@ -29,25 +37,12 @@ ts | string(20) | 必填 | 发起时间(yyyy-MM-dd HH:mm:ss)
     "ts":"2020-09-25 12:00:00"
 }
 ```
-## OMS关闭提问
-##### 提供方
-POS
-##### 调用方
-OMS
-##### content-type
-`application/json`
-##### 参数
-parameter | type | Optional | description
-----------|------|---------|------------
-issueId | string(50) | 必填 | 工单唯一批号 重推直接返回结果
-action | string(50) | 必填 | 常量`close`
-ts | string(20) | 必填 | 发起时间(yyyy-MM-dd HH:mm:ss)
-##### requestbody
+###### 关闭提问
 ```
 {
     "issueId":"12131313131",
-    "action":"close"
-    "ts":"2020-09-25 12:10:00"
+    "action":"close",
+    "ts":"2020-09-25 12:00:00"
 }
 ```
 ## POS答复
