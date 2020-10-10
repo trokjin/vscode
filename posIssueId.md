@@ -5,6 +5,8 @@ POS
 OMS
 ##### content-type
 `application/json`
+##### Query parameter
+`method=omsaftersaleorder`
 ##### 参数
 parameter | type | Optional | description
 ----------|------|---------|------------
