@@ -27,7 +27,27 @@ ts | string(20) | 必填 | 发起时间(yyyy-MM-dd HH:mm:ss)
     "ts":"2020-09-25 12:00:00"
 }
 ```
-
+## OMS关闭提问
+##### 提供方
+POS
+##### 调用方
+OMS
+##### content-type
+`application/json`
+##### 参数
+parameter | type | Optional | description
+----------|------|---------|------------
+issueId | string(50) | 必填 | 工单唯一批号 重推直接返回结果
+action | string(50) | 必填 | 常量`close`
+ts | string(20) | 必填 | 发起时间(yyyy-MM-dd HH:mm:ss)
+##### requestbody
+```
+{
+    "issueId":"12131313131",
+    "action":"close"
+    "ts":"2020-09-25 12:10:00"
+}
+```
 ## POS答复
 ##### 提供方
 OMS
