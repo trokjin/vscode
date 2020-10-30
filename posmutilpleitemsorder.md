@@ -114,8 +114,8 @@ OMS端会将通知单整单或者拆解至满足条件的出库网点进行发�
 -|-|-
 transferCode | string | SCM调入单号(OMS下发发货通知单)
 dispatchNO | string | POS下达的发货通知单号 
-shipCode | string | 波司登出库网点编号 
-shipName | string | 波司登出库网点名称  
+shipCode | string | 出库网点编号 
+shipName | string | 出库网点名称  
 express | string | 出库快递代码
 waybillCode | string | 运单号
 product | string | 货号
@@ -173,8 +173,8 @@ POS发货通知单在OMS端全部出库或者下单时即超卖,全部出库推�
 -|-|-
 transferCode | string | SCM调入单号(OMS下发发货通知单)
 dispatchNO | string | POS下达的发货通知单号 
-shipCode | string | 波司登出库网点编号 
-shipName | string | 波司登出库网点名称  
+shipCode | string | 出库网点编号 
+shipName | string | 出库网点名称  
 express | string | 出库快递代码
 waybillCode | string | 运单号
 product | string | 货号
@@ -255,8 +255,8 @@ msg |string | 同步失败原因
 -|-|-
 transferCode | string | SCM调入单号(OMS下发发货通知单)
 dispatchNO | string | POS下达的发货通知单号 
-receiverCode | string | 波司登出库网点编号 
-receiverName | string | 波司登出库网点名称  
+receiverCode | string | 出库网点编号 
+receiverName | string | 出库网点名称  
 express | string | 退货涉及库快递代码
 waybillCode | string | 退货运单号
 product | string | 货号
